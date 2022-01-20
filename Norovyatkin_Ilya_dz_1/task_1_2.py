@@ -39,7 +39,7 @@ while idx < len(odd_number):
 print(total_amount)
 
 
-#task_1_2_b
+#task_1_2_b, c
 # тут все то же самое, за исключением того, что к каждому числу из промежутка прибавляем 17
 odd_number = []
 for number in range(1, 1001):
