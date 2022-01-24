@@ -71,5 +71,5 @@ for number_1 in range(1, 1001, 2):
 result_1 = sum_list_1(my_list)
 print(result_1)
 
-result_2 = sum_list_2(my_list_1)
+result_2 = sum_list_2(my_list)
 print(result_2)
