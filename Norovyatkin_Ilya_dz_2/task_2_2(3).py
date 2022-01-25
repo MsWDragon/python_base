@@ -36,5 +36,5 @@ my_list = ['в', '5', 'часов', '17', 'минут', 'температура'
 print(id(my_list))
 result = convert_list_in_str(my_list)
 print(my_list)
-print(id(my_list))
+print(id(result))
 print(result)
