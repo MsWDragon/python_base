@@ -26,8 +26,6 @@ def convert_list_in_str(list_in: list) -> str:
             list_in.insert(idx, '"')
             list_in.insert(idx + 2, '"')
             idx += 3
-            
-
     str_out = ' '.join(list_in)
     return str_out
 
