@@ -1,49 +1,38 @@
-def thesaurus(*args) -> dict:
-    # пишите свою реализацию здесь
-    dict_out_1 = {}
-    for n in args:
-        if n[0] in dict_out_1:
-            a = dict_out_1[n[0]] 
-            a = a.append(f'{n}')
-        else:
-            dict_out_1.setdefault (n[0], [n])
-    dict_out = dict_out_1
-    return dict_out
+from random import choice
+
+nouns = ["автомобиль", "лес", "огонь", "город", "дом"]
+adverbs = ["сегодня", "вчера", "завтра", "позавчера", "ночью"]
+adjectives = ["веселый", "яркий", "зеленый", "утопичный", "мягкий"]
+list_1 = []
 
 
-print(thesaurus("Иван", "Мария", "Петр", "Илья"))
+def get_jokes(n, flag=False):
+    for i in range(n):
+        random_index = choice(nouns)
+        random_index_1 = choice(adverbs)
+        random_index_2 = choice(adjectives)
+        joke = f'{random_index} {random_index_1} {random_index_2}'
+        list_2 = []
+        print(joke)
+        if flag == True:
+            list_2 = joke.split()
+            for noun in nouns:
+                for fun in list_2:
+                    if noun == fun:
+                        nouns.remove(noun)
+
+            for adverb in adverbs:
+                for fun in list_2:
+                    if adverb == fun:
+                        adverbs.remove(adverb)
 
 
-def thesaurus_adv(*args) -> dict:
-    # пишите свою реализацию здесь
-    dict_out_3 = {}
-    for n_1 in args:
-        x = n_1.split()
-        y = x[1]
-        if y[0] in dict_out_3:
-            b = dict_out_3[y[0]] 
-            b = b.append(f'{n_1}')
-        else:
-            dict_out_3.setdefault (y[0], [n_1])
-    for key in dict_out_3:
-        dict_out_3[key] = thesaurus(",".join([str(i) for i in dict_out_3[key]]))
-    dict_out_adv = dict_out_3
-    return dict_out_adv
+            for adjective in adjectives:
+                for fun in list_2:
+                    if adjective == fun:
+                        adjectives.remove(adjective)
 
 
-print(thesaurus_adv("Иван Сергеев", "Инна Серова", "Петр Алексеев", "Илья Иванов", "Анна Савельева"))
 
 
-thesaurus_adv("Иван Сергеев", "Инна Серова", "Петр Алексеев", "Илья Иванов", "Анна Савельева")
-{
-    "А": {
-        "П": ["Петр Алексеев"]
-    },
-    "И": {
-        "И": ["Илья Иванов"]
-    },
-    "С": {
-        "И": ["Иван Сергеев", "Инна Серова"], 
-        "А": ["Анна Савельева"]
-    }
-}
+get_jokes(n=5, flag=True)

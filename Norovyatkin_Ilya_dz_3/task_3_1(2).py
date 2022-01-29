@@ -1,4 +1,4 @@
-'''def num_translate(value: str) -> str:
+def num_translate(value: str) -> str:
     """переводит числительное с английского на русский """
     # реализуйте здесь, где хранить необходимые исходные данные определитесь самостоятельно
     translate = {
@@ -17,8 +17,8 @@
     return str_out
 
 
-print(num_translate("ten"))
-print(num_translate("two"))'''
+print(num_translate("nine"))
+print(num_translate("two"))
 
 
 def num_translate_adv(value: str) -> str:
@@ -47,4 +47,4 @@ def num_translate_adv(value: str) -> str:
 
 
 print(num_translate_adv("Five"))
-print(num_translate_adv("Eleven"))
+print(num_translate_adv("One"))
