@@ -1,0 +1,50 @@
+1) Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
+
+pip show pillow
+WARNING: Package(s) not found: pillow
+
+
+2) Установить самую свежую версию pillow, если ранее она не была установлена.
+
+pip install pillow
+Collecting pillow
+  Downloading Pillow-9.0.0-cp310-cp310-win_amd64.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 119 kB/s
+Installing collected packages: pillow
+Successfully installed pillow-9.0.0
+
+pip show pillow
+Name: Pillow
+Version: 9.0.0
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: c:\users\msw98\appdata\local\programs\python\python310\lib\site-packages
+Requires:
+Required-by:
+
+
+3) Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow.
+
+(virt) PS C:\Users\msw98> pip freeze
+(virt) PS C:\Users\msw98>
+
+
+4) Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
+
+(virt) PS C:\Users\msw98> pip install pillow
+Collecting pillow
+  Using cached Pillow-9.0.0-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.0.0
+
+(virt) PS C:\Users\msw98> pip freeze
+Pillow==9.0.0
+
+
+5) Деактивировать виртуальное окружение.
+
+(virt) PS C:\Users\msw98> deactivate
+PS C:\Users\msw98>
