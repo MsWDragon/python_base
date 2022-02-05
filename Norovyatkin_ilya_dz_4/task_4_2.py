@@ -8,7 +8,7 @@ url = 'http://www.cbr.ru/scripts/XML_daily.asp'
 
 
 def send_request() -> requests.Response:
-    """Выполняет запрос данных с ЦБР"""
+    #Выполняет запрос данных с ЦБР
     response = requests.get(url, timeout=2)
     if not response.ok:
         print(f'Запрос не успешен: {response.status_code}')
@@ -17,7 +17,7 @@ def send_request() -> requests.Response:
 
 
 def currency_rates(code: str) -> float:
-    """Извлекает данные и возвращает курс валюты `code` по отношению к рублю"""
+    #Извлекает данные и возвращает курс валюты `code` по отношению к рублю
     code_1 = code.upper()
     res = send_request()
     main_root = pq(etree.fromstring(res.content))

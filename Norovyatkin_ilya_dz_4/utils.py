@@ -17,7 +17,7 @@ def send_request() -> requests.Response:
 
 
 def currency_rates(code: str) -> float:
-    """Извлекает данные и возвращает курс валюты `code` по отношению к рублю"""
+    #Извлекает данные и возвращает курс валюты `code` по отношению к рублю
     code_1 = code.upper()
     res = send_request()
     main_root = pq(etree.fromstring(res.content))

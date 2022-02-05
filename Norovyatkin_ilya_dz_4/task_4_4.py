@@ -18,9 +18,9 @@ if __name__ == '__main__':
 #    '''
 #      ^
 #SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 688-689: truncated \UXXXXXXXX escape
-
-
-
+#
+#
+#
 #PS C:\Users\msw98\OneDrive\Рабочий стол\python_base\Norovyatkin_Ilya_dz_4> python task_4_4.py USD
 #76.4849
 #PS C:\Users\msw98\OneDrive\Рабочий стол\python_base\Norovyatkin_Ilya_dz_4> python task_4_4.py kzt

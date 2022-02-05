@@ -4,6 +4,7 @@ pip show pillow
 WARNING: Package(s) not found: pillow
 
 
+
 2) Установить самую свежую версию pillow, если ранее она не была установлена.
 
 pip install pillow
@@ -26,10 +27,12 @@ Requires:
 Required-by:
 
 
+
 3) Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета pillow.
 
 (virt) PS C:\Users\msw98> pip freeze
 (virt) PS C:\Users\msw98>
+
 
 
 4) Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
@@ -42,6 +45,7 @@ Successfully installed pillow-9.0.0
 
 (virt) PS C:\Users\msw98> pip freeze
 Pillow==9.0.0
+
 
 
 5) Деактивировать виртуальное окружение.
