@@ -38,9 +38,9 @@ number_1 = get_numbers_adv(src)
 
 start = perf_counter()
 print(src_1)
-print(number_1, '\n', perf_counter() - start, '\n', sys.getsizeof(number_))
+print(number_, '\n', perf_counter() - start, '\n', sys.getsizeof(number_))
 
 start = perf_counter()
-print(number_, '\n', perf_counter() - start, '\n', sys.getsizeof(number_1))
+print(number_1, '\n', perf_counter() - start, '\n', sys.getsizeof(number_1))
 
 
