@@ -1,4 +1,5 @@
-def add_sale(argv):
+def add_sale(argv: str):
+    '''Принимает аргумет и вписывает его в файл bakery.csv'''
     with open('bakery.csv', 'a', encoding='utf-8') as fa:
         program, *args = argv
         fa.write(f'{"".join(args)}\n')
