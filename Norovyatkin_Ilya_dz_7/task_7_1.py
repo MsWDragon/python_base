@@ -1,10 +1,9 @@
 import yaml
 import os
-from pprint import pprint
 
 
 def add_dir(config_file: str):
-
+    '''Создает структуру папок на основе файла config.yaml'''
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     print(BASE_DIR)
 
