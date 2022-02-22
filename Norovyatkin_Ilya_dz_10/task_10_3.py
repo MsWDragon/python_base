@@ -2,7 +2,7 @@ class Cell:
 
     def __init__(self, cells):
         self.cells = cells
-        self.simbol = '*'
+        self.simbol = '+'
 
     def __str__(self):
         return str(f'Количество ячеек - {self.cells}')
